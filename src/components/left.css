@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.left {
+    height: 100vh;
+}
+.add:hover {
+    transform: scale(1.05);
+}
+
+.left-header {
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-header>h1 {
+    font-weight: 600;
+    font-size: 5vh;
+}
+
+.left-titles {
+    height: 80vh;
+    width: 30vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* width */
+.left-titles::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+.left-titles::-webkit-scrollbar-track {
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+/* Handle */
+.left-titles::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+} 
+
+/* Handle on hover */
+.left-titles::-webkit-scrollbar-thumb:hover {
+    background: grey;
+} 
+.add {
+    height: 8vh;
+    width: 8vh;
+    background-color: #16008B;
+    color: white;
+    position: fixed;
+    border: none;
+    border-radius: 50%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65vh;
+    margin-left: 24vw;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.add:hover {
+    transform: scale(1.05);
+}
+
+.todo-color{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    color: #fff;
+    margin-left: 3vw;
+}
+.todo-item{
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+.todo-item:hover{
+    background-color: #9d9d9d2b ;
+}
+.todo-item.selected {
+    background: #2F2F2F2B;
+
+}
+.todo-title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-left: 2vw;
+    font-size: 3vh;
+    color: #000;
+}

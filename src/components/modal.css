@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-box-CNG {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.CNG {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 3.5vh;
+    margin: 0;
+}
+
+.modal-box-GroupName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-title {
+    height: 5vh;
+    width: 18vw;
+    border-radius: 2.2vh;
+    outline: none;
+    border: 2px solid #CCCCCC;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2.5vh;
+    padding-left: 1vw;
+    margin: 1vh;
+    margin-left: 2vw;
+}
+
+.input-title::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2.5vh;
+}
+
+.modal-box-GroupName > h1 {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 3.5vh;
+}
+
+.modal-box-ChooseColor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.modal-box-ChooseColor > h1 {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 3.5vh;
+}
+
+.color-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5vh;
+    width: 15vw;
+    margin-right: 4vw;
+}
+
+.box {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.box.selected {
+    border: 2px solid #000;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    height: 3.5vh;
+    width: 6vw;
+    border: none;
+    background-color: #001F8B;
+    border-radius: 1vh;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+} 
