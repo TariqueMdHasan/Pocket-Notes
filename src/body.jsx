@@ -4,21 +4,35 @@ import Left from '../src/components/left';
 import RightTodo from '../src/components/righttodo';
 import Right from '../src/components/right';
 
+
+
 function Body() {
     const [todos, setTodos] = useState([]);
     const [selectedTodoIndex, setSelectedTodoIndex] = useState(null);
     const [subTodos, setSubTodos] = useState({});
 
+    
     useEffect(() => {
         const savedTodos = JSON.parse(localStorage.getItem('todos'));
         if (savedTodos) {
             setTodos(savedTodos);
         }
+
+        const savedSubTodos = JSON.parse(localStorage.getItem('subTodos'));
+        if (savedSubTodos) {
+            setSubTodos(savedSubTodos);
+        }
     }, []);
 
+    
     useEffect(() => {
         localStorage.setItem('todos', JSON.stringify(todos));
     }, [todos]);
+
+    
+    useEffect(() => {
+        localStorage.setItem('subTodos', JSON.stringify(subTodos));
+    }, [subTodos]);
 
     const addTodo = (newTodo) => {
         setTodos([...todos, newTodo]);
